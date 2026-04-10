@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sumair.bites | Premium Modern Dining</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3448/3448609.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;800&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- AOS Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- SweetAlert2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Premium Preloader -->
+    <div id="loader" class="loader-wrapper">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <h1 class="loader-text mt-4">SUMAIR.BITES</h1>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Premium Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">
+                SUMAIR.BITES
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="text-gold fs-2"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#offers">Offers</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#reservation">Reservation</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <div class="theme-switch-wrapper">
+                            <button id="themeToggle" class="btn btn-outline-premium btn-sm rounded-circle p-2">
+                                <i class="fas fa-moon"></i>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section" style="background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat fixed;">
+        <div class="hero-overlay" style="background: linear-gradient(180deg, rgba(17,17,17,0.7) 0%, rgba(17,17,17,1) 100%); position: absolute; top:0; left:0; width:100%; height:100%;"></div>
+        <div class="container position-relative z-3">
+            <div class="hero-content" data-aos="fade-up">
+                <h5 class="text-gold fw-bold mb-3 letter-spacing-3" data-aos="fade-down">PREMIUM CULINARY ART</h5>
+                <h1 class="display-1 fw-bold text-white mb-4" id="typing-text"></h1>
+                <p class="lead text-white-50 mb-5 fs-4 mx-auto" style="max-width: 700px;" data-aos="fade-up" data-aos-delay="200">Indulge in a world of refined flavors where every bite tells a story of passion and excellence.</p>
+                <div class="d-flex justify-content-center gap-4 flex-wrap" data-aos="fade-up" data-aos-delay="400">
+                    <a href="#menu" class="btn btn-premium btn-lg ripple px-5 py-3">View Menu</a>
+                    <a href="#reservation" class="btn btn-outline-premium btn-lg text-white border-white ripple px-5 py-3">Book Table</a>
+                </div>
+            </div>
+            <div class="scroll-indicator mt-5 pt-5" data-aos="fade-up" data-aos-delay="600">
+                <a href="#about" class="text-gold fs-2"><i class="fas fa-chevron-down bounce"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Wave Divider -->
+    <div class="divider">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+        </svg>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 overflow-hidden">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="About Royal Bites" class="img-fluid rounded-4 shadow-lg" loading="lazy">
+                        <div class="about-experience glass p-4 rounded-4 position-absolute bottom-0 end-0 m-4" data-aos="zoom-in" data-aos-delay="300">
+                            <h2 class="text-gold fw-bold mb-0">15+</h2>
+                            <p class="text-white mb-0 small fw-bold">Years of Perfection</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="ps-lg-5">
+                        <h6 class="text-gold fw-bold mb-3 letter-spacing-2">OUR HERITAGE</h6>
+                        <h2 class="display-4 fw-bold mb-4">A Legacy of <span class="text-gradient">Taste</span></h2>
+                        <p class="lead text-muted mb-4">At Royal Bites Cafe, we don't just serve food; we create memories. Our chefs blend traditional recipes with modern techniques to bring you an unmatched dining experience.</p>
+                        <div class="row g-4 mb-5">
+                            <div class="col-sm-6">
+                                <div class="glass p-3 rounded-3 d-flex align-items-center">
+                                    <i class="fas fa-leaf text-gold fs-3 me-3"></i>
+                                    <span class="fw-bold">Organic Sourcing</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="glass p-3 rounded-3 d-flex align-items-center">
+                                    <i class="fas fa-award text-gold fs-3 me-3"></i>
+                                    <span class="fw-bold">Michelin Quality</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#menu" class="btn btn-premium">Learn Our Story</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-surface position-relative">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-title">
+                    <h6 class="text-gold fw-bold mb-2 letter-spacing-2">EXQUISITE MENU</h6>
+                    <h2 class="display-4 fw-bold mb-3">Our <span class="text-gradient">Signature</span> Dishes</h2>
+                </div>
+            </div>
+
+            <!-- Modern Filter -->
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <button class="btn btn-outline-premium active filter-btn" data-filter="all">All Items</button>
+                        <button class="btn btn-outline-premium filter-btn" data-filter="fastfood">Gourmet Fast Food</button>
+                        <button class="btn btn-outline-premium filter-btn" data-filter="drinks">Artisan Drinks</button>
+                        <button class="btn btn-outline-premium filter-btn" data-filter="dessert">Royal Desserts</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="row g-4" id="menu-grid">
+                <!-- Item 1 -->
+                <div class="col-lg-4 col-md-6 menu-item" data-category="fastfood" data-aos="fade-up">
+                    <div class="menu-card" data-tilt>
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Royal Burger" loading="lazy">
+                            <div class="glass p-2 rounded-3 position-absolute top-0 end-0 m-3">
+                                <span class="text-gold fw-bold">$12.99</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="fw-bold mb-2">Royal Truffle Burger</h4>
+                            <p class="text-muted small mb-3">Wagyu beef, black truffle aioli, aged cheddar, and caramelized onions on a brioche bun.</p>
+                            <button class="btn btn-premium btn-sm w-100">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="col-lg-4 col-md-6 menu-item" data-category="fastfood" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-card" data-tilt>
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Margherita Pizza" loading="lazy">
+                            <div class="glass p-2 rounded-3 position-absolute top-0 end-0 m-3">
+                                <span class="text-gold fw-bold">$15.50</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="fw-bold mb-2">Artisan Margherita</h4>
+                            <p class="text-muted small mb-3">San Marzano tomatoes, buffalo mozzarella, fresh basil, and extra virgin olive oil.</p>
+                            <button class="btn btn-premium btn-sm w-100">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="col-lg-4 col-md-6 menu-item" data-category="drinks" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-card" data-tilt>
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1544145945-f904253d0c71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cocktail" loading="lazy">
+                            <div class="glass p-2 rounded-3 position-absolute top-0 end-0 m-3">
+                                <span class="text-gold fw-bold">$9.00</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="fw-bold mb-2">Royal Signature Gin</h4>
+                            <p class="text-muted small mb-3">Premium gin infused with hibiscus, elderflower, and served with a sprig of rosemary.</p>
+                            <button class="btn btn-premium btn-sm w-100">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="col-lg-4 col-md-6 menu-item" data-category="dessert" data-aos="fade-up">
+                    <div class="menu-card" data-tilt>
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Lava Cake" loading="lazy">
+                            <div class="glass p-2 rounded-3 position-absolute top-0 end-0 m-3">
+                                <span class="text-gold fw-bold">$8.50</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="fw-bold mb-2">Golden Lava Cake</h4>
+                            <p class="text-muted small mb-3">Warm dark chocolate with a molten gold caramel center, served with gold leaf garnish.</p>
+                            <button class="btn btn-premium btn-sm w-100">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="col-lg-4 col-md-6 menu-item" data-category="drinks" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-card" data-tilt>
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1541167760496-162955ed8a9f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Macchiato" loading="lazy">
+                            <div class="glass p-2 rounded-3 position-absolute top-0 end-0 m-3">
+                                <span class="text-gold fw-bold">$6.50</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="fw-bold mb-2">Caramel Macchiato</h4>
+                            <p class="text-muted small mb-3">Double shot of espresso with steamed milk and a signature gold caramel drizzle.</p>
+                            <button class="btn btn-premium btn-sm w-100">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 6 -->
+                <div class="col-lg-4 col-md-6 menu-item" data-category="dessert" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-card" data-tilt>
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cheesecake" loading="lazy">
+                            <div class="glass p-2 rounded-3 position-absolute top-0 end-0 m-3">
+                                <span class="text-gold fw-bold">$7.99</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="fw-bold mb-2">Royal Berry Cake</h4>
+                            <p class="text-muted small mb-3">Velvety cheesecake topped with fresh forest berries and a gold-infused berry coulis.</p>
+                            <button class="btn btn-premium btn-sm w-100">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 7 -->
+                <div class="col-lg-4 col-md-6 menu-item" data-category="fastfood" data-aos="fade-up">
+                    <div class="menu-card" data-tilt>
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Pasta" loading="lazy">
+                            <div class="glass p-2 rounded-3 position-absolute top-0 end-0 m-3">
+                                <span class="text-gold fw-bold">$14.00</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="fw-bold mb-2">Truffle Carbonara</h4>
+                            <p class="text-muted small mb-3">Handmade pasta tossed in a creamy pecorino sauce with fresh black truffle shavings.</p>
+                            <button class="btn btn-premium btn-sm w-100">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 8 -->
+                <div class="col-lg-4 col-md-6 menu-item" data-category="drinks" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-card" data-tilt>
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1510626176961-4b57d4fbad03?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Wine" loading="lazy">
+                            <div class="glass p-2 rounded-3 position-absolute top-0 end-0 m-3">
+                                <span class="text-gold fw-bold">$18.00</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="fw-bold mb-2">Vintage Reserve</h4>
+                            <p class="text-muted small mb-3">A selection of our finest vintage red wines, aged to perfection in our royal cellar.</p>
+                            <button class="btn btn-premium btn-sm w-100">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 9 -->
+                <div class="col-lg-4 col-md-6 menu-item" data-category="dessert" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-card" data-tilt>
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Tiramisu" loading="lazy">
+                            <div class="glass p-2 rounded-3 position-absolute top-0 end-0 m-3">
+                                <span class="text-gold fw-bold">$9.50</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="fw-bold mb-2">Classic Tiramisu</h4>
+                            <p class="text-muted small mb-3">Espresso-soaked ladyfingers layered with rich mascarpone cream and dusted with cocoa.</p>
+                            <button class="btn btn-premium btn-sm w-100">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers with Parallax -->
+    <section id="offers" class="py-5 position-relative overflow-hidden" style="background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat fixed;">
+        <div class="hero-overlay" style="background: rgba(0,0,0,0.8); position: absolute; top:0; left:0; width:100%; height:100%;"></div>
+        <div class="container py-5 position-relative z-3 text-center">
+            <div class="glass p-5 rounded-5 shadow-lg mx-auto" style="max-width: 900px;" data-aos="zoom-in">
+                <h6 class="text-gold fw-bold mb-3">LIMITED TIME OFFER</h6>
+                <h2 class="display-4 fw-bold text-white mb-4">Weekend <span class="text-gradient">Royal Feast</span></h2>
+                <p class="lead text-white-50 mb-5">Enjoy a 4-course gourmet experience with complimentary wine. Reserve your spot now for this exclusive weekend special.</p>
+                
+                <div class="row g-3 justify-content-center mb-5">
+                    <div class="col-6 col-md-2">
+                        <div class="glass p-3 rounded-4">
+                            <h3 id="days" class="text-gold fw-bold mb-0">00</h3>
+                            <small class="text-white-50">Days</small>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <div class="glass p-3 rounded-4">
+                            <h3 id="hours" class="text-gold fw-bold mb-0">00</h3>
+                            <small class="text-white-50">Hours</small>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <div class="glass p-3 rounded-4">
+                            <h3 id="minutes" class="text-gold fw-bold mb-0">00</h3>
+                            <small class="text-white-50">Mins</small>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <div class="glass p-3 rounded-4">
+                            <h3 id="seconds" class="text-gold fw-bold mb-0">00</h3>
+                            <small class="text-white-50">Secs</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="#reservation" class="btn btn-premium btn-lg px-5">Claim My Offer</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5 bg-surface">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-title">
+                    <h6 class="text-gold fw-bold mb-2 letter-spacing-2">OUR GALLERY</h6>
+                    <h2 class="display-4 fw-bold mb-3">Atmosphere & <span class="text-gradient">Elegance</span></h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Gallery Item 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="gallery-item overflow-hidden rounded-4 position-relative" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img-src="https://images.unsplash.com/photo-1550966841-3ee7adac1af0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1550966841-3ee7adac1af0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid w-100 h-100 object-fit-cover" alt="Interior" loading="lazy">
+                        <div class="gallery-overlay glass d-flex align-items-center justify-content-center opacity-0 transition-all position-absolute top-0 start-0 w-100 h-100">
+                            <div class="text-center">
+                                <i class="fas fa-expand text-gold fs-1 mb-2"></i>
+                                <p class="text-white fw-bold">Elegant Interior</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-item overflow-hidden rounded-4 position-relative" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img-src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid w-100 h-100 object-fit-cover" alt="Platter" loading="lazy">
+                        <div class="gallery-overlay glass d-flex align-items-center justify-content-center opacity-0 transition-all position-absolute top-0 start-0 w-100 h-100">
+                            <div class="text-center">
+                                <i class="fas fa-expand text-gold fs-1 mb-2"></i>
+                                <p class="text-white fw-bold">Signature Platter</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-item overflow-hidden rounded-4 position-relative" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img-src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid w-100 h-100 object-fit-cover" alt="Dining" loading="lazy">
+                        <div class="gallery-overlay glass d-flex align-items-center justify-content-center opacity-0 transition-all position-absolute top-0 start-0 w-100 h-100">
+                            <div class="text-center">
+                                <i class="fas fa-expand text-gold fs-1 mb-2"></i>
+                                <p class="text-white fw-bold">Gourmet Dining</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="gallery-item overflow-hidden rounded-4 position-relative" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img-src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid w-100 h-100 object-fit-cover" alt="Chef" loading="lazy">
+                        <div class="gallery-overlay glass d-flex align-items-center justify-content-center opacity-0 transition-all position-absolute top-0 start-0 w-100 h-100">
+                            <div class="text-center">
+                                <i class="fas fa-expand text-gold fs-1 mb-2"></i>
+                                <p class="text-white fw-bold">Master Chefs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 5 -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-item overflow-hidden rounded-4 position-relative" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img-src="https://images.unsplash.com/photo-1554679665-f5537f187268?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1554679665-f5537f187268?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid w-100 h-100 object-fit-cover" alt="Bar" loading="lazy">
+                        <div class="gallery-overlay glass d-flex align-items-center justify-content-center opacity-0 transition-all position-absolute top-0 start-0 w-100 h-100">
+                            <div class="text-center">
+                                <i class="fas fa-expand text-gold fs-1 mb-2"></i>
+                                <p class="text-white fw-bold">Artisan Bar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 6 -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-item overflow-hidden rounded-4 position-relative" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img-src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid w-100 h-100 object-fit-cover" alt="Desserts" loading="lazy">
+                        <div class="gallery-overlay glass d-flex align-items-center justify-content-center opacity-0 transition-all position-absolute top-0 start-0 w-100 h-100">
+                            <div class="text-center">
+                                <i class="fas fa-expand text-gold fs-1 mb-2"></i>
+                                <p class="text-white fw-bold">Royal Desserts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 7 -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="gallery-item overflow-hidden rounded-4 position-relative" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img-src="https://images.unsplash.com/photo-1544145945-f904253d0c71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1544145945-f904253d0c71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid w-100 h-100 object-fit-cover" alt="Cocktail" loading="lazy">
+                        <div class="gallery-overlay glass d-flex align-items-center justify-content-center opacity-0 transition-all position-absolute top-0 start-0 w-100 h-100">
+                            <div class="text-center">
+                                <i class="fas fa-expand text-gold fs-1 mb-2"></i>
+                                <p class="text-white fw-bold">Artisan Mixology</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 8 -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-item overflow-hidden rounded-4 position-relative" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img-src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid w-100 h-100 object-fit-cover" alt="Atmosphere" loading="lazy">
+                        <div class="gallery-overlay glass d-flex align-items-center justify-content-center opacity-0 transition-all position-absolute top-0 start-0 w-100 h-100">
+                            <div class="text-center">
+                                <i class="fas fa-expand text-gold fs-1 mb-2"></i>
+                                <p class="text-white fw-bold">Night Ambiance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 9 -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-item overflow-hidden rounded-4 position-relative" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img-src="https://images.unsplash.com/photo-1554679665-f5537f187268?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1554679665-f5537f187268?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid w-100 h-100 object-fit-cover" alt="Service" loading="lazy">
+                        <div class="gallery-overlay glass d-flex align-items-center justify-content-center opacity-0 transition-all position-absolute top-0 start-0 w-100 h-100">
+                            <div class="text-center">
+                                <i class="fas fa-expand text-gold fs-1 mb-2"></i>
+                                <p class="text-white fw-bold">Royal Service</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section Upgrade -->
+    <section id="reservation" class="py-5 position-relative overflow-hidden">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <h6 class="text-gold fw-bold mb-3 letter-spacing-2">RESERVATIONS</h6>
+                    <h2 class="display-4 fw-bold mb-4">Book Your <span class="text-gradient">Experience</span></h2>
+                    <p class="text-muted mb-5">Secure your table at Royal Bites Cafe and prepare for a culinary journey that transcends the ordinary.</p>
+                    
+                    <div class="contact-card glass p-4 rounded-4 mb-4">
+                        <div class="d-flex align-items-center">
+                            <div class="bg-gold p-3 rounded-circle me-4 text-black"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <p class="text-muted mb-0 small">Call Us Directly</p>
+                                <h5 class="fw-bold mb-0">+1 (234) 567-890</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-card glass p-4 rounded-4">
+                        <div class="d-flex align-items-center">
+                            <div class="bg-gold p-3 rounded-circle me-4 text-black"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <p class="text-muted mb-0 small">Visit Us At</p>
+                                <h5 class="fw-bold mb-0">123 Royal Street, Foodie City</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="glass p-5 rounded-5 shadow-premium">
+                        <form id="reservationForm" class="row g-4 needs-validation" novalidate>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="resName" placeholder="Full Name" required>
+                                    <label for="resName">Full Name</label>
+                                    <div class="invalid-feedback">Please enter your name.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="resEmail" placeholder="Email Address" required>
+                                    <label for="resEmail">Email Address</label>
+                                    <div class="invalid-feedback">Please enter a valid email.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="resPhone" placeholder="Phone Number" required>
+                                    <label for="resPhone">Phone Number</label>
+                                    <div class="invalid-feedback">Please enter your phone.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select class="form-select" id="resGuests" required>
+                                        <option selected disabled value="">Number of Guests</option>
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 Persons</option>
+                                        <option value="3">3 Persons</option>
+                                        <option value="4">4 Persons</option>
+                                        <option value="5">5+ Persons</option>
+                                    </select>
+                                    <label for="resGuests">Number of Guests</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="date" class="form-control" id="resDate" required>
+                                    <label for="resDate">Reservation Date</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="time" class="form-control" id="resTime" required>
+                                    <label for="resTime">Reservation Time</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-premium w-100 py-3 fs-5">Confirm Reservation</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Carousel Refined -->
+    <section id="testimonials" class="py-5 bg-surface">
+        <div class="container py-5">
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="text-center glass p-5 rounded-5 mx-auto" style="max-width: 800px;">
+                            <i class="fas fa-quote-right text-gold fs-1 mb-4"></i>
+                            <p class="fs-4 italic mb-5">"An unforgettable evening. The Truffle Burger redefined my expectations of gourmet food. Pure excellence!"</p>
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="rounded-circle mb-3 border border-3 border-gold p-1" width="80" alt="Client">
+                            <h5 class="fw-bold mb-0">Jessica Smith</h5>
+                            <small class="text-gold">GASTRONOMY CRITIC</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container text-center text-md-start">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <h2 class="text-gradient fw-bold mb-4">SUMAIR.BITES</h2>
+                    <p class="text-muted">Experience the pinnacle of fine dining. Our commitment to quality and elegance makes every visit a royal celebration.</p>
+                    <div class="d-flex gap-3 mt-4 justify-content-center justify-content-md-start">
+                        <a href="#" class="social-icon glass rounded-circle"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon glass rounded-circle"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon glass rounded-circle"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h5 class="text-white fw-bold mb-4">QUICK LINKS</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="#home" class="text-muted">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="text-muted">About Us</a></li>
+                        <li class="mb-2"><a href="#menu" class="text-muted">Our Menu</a></li>
+                        <li><a href="#reservation" class="text-muted">Reservations</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white fw-bold mb-4">NEWSLETTER</h5>
+                    <p class="text-muted">Subscribe to receive exclusive offers and event invites.</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control glass border-0" placeholder="Your Email">
+                        <button class="btn btn-premium" type="button">Join</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <p class="text-center text-muted mb-0">&copy; 2026 Royal Bites Cafe. Crafted for Perfection.</p>
+        </div>
+    </footer>
+
+    <!-- Gallery Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content glass border-0">
+                <div class="modal-body p-0 position-relative">
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3 z-3" data-bs-dismiss="modal"></button>
+                    <img src="" id="modalImg" class="img-fluid rounded-4" alt="Gallery">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <!-- Vanilla Tilt JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
